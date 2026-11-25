@@ -1,0 +1,797 @@
+{
+  "startedAt": "2026-11-25 12:06:38 +08",
+  "finishedAt": "2026-11-25 12:07:13 +08",
+  "startup": {
+    "ready": true,
+    "error": null,
+    "startupMs": 100.8,
+    "pid": 3413,
+    "rssKb": 38176
+  },
+  "restart": {
+    "ready": true,
+    "startupMs": 101.1,
+    "pid": 3483
+  },
+  "resources": {
+    "gatewayRssKb": 50600,
+    "gatewayHwmKb": 50600,
+    "pythonRssKb": 39092
+  },
+  "cardSignatureSelfCheck": {
+    "v03": true,
+    "v10": true
+  },
+  "cases": [
+    {
+      "name": "card-v03-a",
+      "at": "2026-11-25 12:06:39 +08",
+      "status": 200,
+      "urls": [
+        "http://127.0.0.1:18080/tenant-a",
+        "http://127.0.0.1:18081/provider",
+        "http://127.0.0.1:18081/docs"
+      ],
+      "containsBackendPort": true,
+      "signaturePresent": true,
+      "signatureStillValid": false,
+      "signatureEqualsOriginal": true
+    },
+    {
+      "name": "card-v10-a",
+      "at": "2026-11-25 12:06:39 +08",
+      "status": 200,
+      "urls": [
+        "http://127.0.0.1:18080/tenant-a",
+        "http://127.0.0.1:18080/tenant-a/rest",
+        "http://127.0.0.1:18081/provider",
+        "http://127.0.0.1:18081/docs"
+      ],
+      "containsBackendPort": true,
+      "signaturePresent": true,
+      "signatureStillValid": false,
+      "signatureEqualsOriginal": true
+    },
+    {
+      "name": "card-v03-b",
+      "at": "2026-11-25 12:06:39 +08",
+      "status": 200,
+      "urls": [
+        "http://127.0.0.1:18080/tenant-b",
+        "http://127.0.0.1:18082/provider",
+        "http://127.0.0.1:18082/docs"
+      ],
+      "containsBackendPort": true,
+      "signaturePresent": true,
+      "signatureStillValid": false,
+      "signatureEqualsOriginal": true
+    },
+    {
+      "name": "card-v10-b",
+      "at": "2026-11-25 12:06:39 +08",
+      "status": 200,
+      "urls": [
+        "http://127.0.0.1:18080/tenant-b",
+        "http://127.0.0.1:18080/tenant-b/rest",
+        "http://127.0.0.1:18082/provider",
+        "http://127.0.0.1:18082/docs"
+      ],
+      "containsBackendPort": true,
+      "signaturePresent": true,
+      "signatureStillValid": false,
+      "signatureEqualsOriginal": true
+    },
+    {
+      "name": "direct-backend-card",
+      "at": "2026-11-25 12:06:39 +08",
+      "status": 200,
+      "urls": [
+        "http://127.0.0.1:18081/",
+        "http://127.0.0.1:18081/rest"
+      ],
+      "signatureStillValid": true
+    },
+    {
+      "name": "send-a-v1",
+      "at": "2026-11-25 12:06:39 +08",
+      "status": 200,
+      "error": null,
+      "elapsedMs": 1.3,
+      "hasResult": true,
+      "errorCode": null,
+      "errorMessage": null,
+      "taskId": "task-a-1",
+      "state": "completed",
+      "resultText": [
+        "GIT1-TEST-001"
+      ],
+      "resultKind": null,
+      "nested": true,
+      "bodyHasBackendPort": false
+    },
+    {
+      "name": "get-a-v1",
+      "at": "2026-11-25 12:06:39 +08",
+      "status": 200,
+      "error": null,
+      "elapsedMs": 1.1,
+      "hasResult": true,
+      "errorCode": null,
+      "errorMessage": null,
+      "taskId": "task-a-1",
+      "state": "completed",
+      "resultText": [
+        "GIT1-TEST-001"
+      ],
+      "resultKind": null,
+      "nested": true,
+      "bodyHasBackendPort": false
+    },
+    {
+      "name": "send-a-v03",
+      "at": "2026-11-25 12:06:39 +08",
+      "status": 200,
+      "error": null,
+      "elapsedMs": 1.1,
+      "hasResult": true,
+      "errorCode": null,
+      "errorMessage": null,
+      "taskId": "task-a-2",
+      "state": "completed",
+      "resultText": [
+        "GIT1-TEST-001"
+      ],
+      "resultKind": "task",
+      "nested": false,
+      "bodyHasBackendPort": false
+    },
+    {
+      "name": "get-a-v03",
+      "at": "2026-11-25 12:06:39 +08",
+      "status": 200,
+      "error": null,
+      "elapsedMs": 1.0,
+      "hasResult": true,
+      "errorCode": null,
+      "errorMessage": null,
+      "taskId": "task-a-2",
+      "state": "completed",
+      "resultText": [
+        "GIT1-TEST-001"
+      ],
+      "resultKind": "task",
+      "nested": false,
+      "bodyHasBackendPort": false
+    },
+    {
+      "name": "send-b-v1",
+      "at": "2026-11-25 12:06:39 +08",
+      "status": 200,
+      "error": null,
+      "elapsedMs": 0.8,
+      "hasResult": true,
+      "errorCode": null,
+      "errorMessage": null,
+      "taskId": "task-b-1",
+      "state": "completed",
+      "resultText": [
+        "GIT1-TEST-001"
+      ],
+      "resultKind": null,
+      "nested": true,
+      "bodyHasBackendPort": false
+    },
+    {
+      "name": "a-token-on-b-route",
+      "at": "2026-11-25 12:06:39 +08",
+      "status": 403,
+      "error": null,
+      "elapsedMs": 0.5,
+      "text": "authorization failed"
+    },
+    {
+      "name": "a-token-b-task-on-a-route",
+      "at": "2026-11-25 12:06:39 +08",
+      "status": 200,
+      "error": null,
+      "elapsedMs": 1.3,
+      "hasResult": false,
+      "errorCode": -32001,
+      "errorMessage": "task not found",
+      "taskId": null,
+      "state": null,
+      "resultText": [],
+      "resultKind": null,
+      "nested": false,
+      "bodyHasBackendPort": false
+    },
+    {
+      "name": "b-token-on-a-card",
+      "at": "2026-11-25 12:06:39 +08",
+      "status": 403,
+      "text": "authorization failed"
+    },
+    {
+      "name": "no-token",
+      "at": "2026-11-25 12:06:39 +08",
+      "status": 401,
+      "error": null,
+      "elapsedMs": 0.3,
+      "text": "authentication failed"
+    },
+    {
+      "name": "expired-token",
+      "at": "2026-11-25 12:06:39 +08",
+      "status": 401,
+      "error": null,
+      "elapsedMs": 0.3,
+      "text": "authentication failed"
+    },
+    {
+      "name": "tamper-tenant-header",
+      "at": "2026-11-25 12:06:39 +08",
+      "status": 403,
+      "error": null,
+      "elapsedMs": 0.3,
+      "text": "authorization failed"
+    },
+    {
+      "name": "direct-a-without-token",
+      "at": "2026-11-25 12:06:39 +08",
+      "status": 401
+    },
+    {
+      "name": "direct-a-with-b-token",
+      "at": "2026-11-25 12:06:39 +08",
+      "status": 401
+    },
+    {
+      "name": "direct-a-with-a-token",
+      "at": "2026-11-25 12:06:39 +08",
+      "status": 200
+    },
+    {
+      "name": "client-supplied-wrong-backend-token-overwritten",
+      "at": "2026-11-25 12:06:39 +08",
+      "status": 200,
+      "error": null,
+      "elapsedMs": 0.8,
+      "hasResult": true,
+      "errorCode": null,
+      "errorMessage": null,
+      "taskId": "task-a-1",
+      "state": "completed",
+      "resultText": [
+        "GIT1-TEST-001"
+      ],
+      "resultKind": null,
+      "nested": true,
+      "bodyHasBackendPort": false
+    },
+    {
+      "name": "jsonrpc-error-http-200",
+      "at": "2026-11-25 12:06:39 +08",
+      "status": 200,
+      "error": null,
+      "elapsedMs": 1.0,
+      "hasResult": false,
+      "errorCode": -32602,
+      "errorMessage": "synthetic invalid params",
+      "taskId": null,
+      "state": null,
+      "resultText": [],
+      "resultKind": null,
+      "nested": false,
+      "bodyHasBackendPort": false
+    },
+    {
+      "name": "content-type-a2a-json",
+      "at": "2026-11-25 12:06:39 +08",
+      "status": 200,
+      "error": null,
+      "elapsedMs": 0.9,
+      "hasResult": true,
+      "errorCode": null,
+      "errorMessage": null,
+      "taskId": "task-a-3",
+      "state": "completed",
+      "resultText": [
+        "GIT1-TEST-001"
+      ],
+      "resultKind": null,
+      "nested": true,
+      "bodyHasBackendPort": false
+    },
+    {
+      "name": "gateway-timeout",
+      "at": "2026-11-25 12:06:43 +08",
+      "client": {
+        "status": 504,
+        "error": null,
+        "elapsedMs": 1001.6,
+        "headerNames": [
+          "connection",
+          "content-length",
+          "content-type",
+          "date"
+        ],
+        "text": "request timeout"
+      },
+      "executionsBefore": 3,
+      "executionsAfter": 4,
+      "tasksAfter": 4
+    },
+    {
+      "name": "sse-disconnect",
+      "at": "2026-11-25 12:06:49 +08",
+      "status": 200,
+      "firstEventState": "working",
+      "taskId": "task-a-5",
+      "closedAfterFirst": true,
+      "statesSoonAfterClose": [
+        {
+          "id": "task-a-5",
+          "state": "working",
+          "result": null,
+          "transportClosed": false,
+          "cancelRequested": false,
+          "workerStopped": false
+        }
+      ],
+      "statesAfterHold": [
+        {
+          "id": "task-a-5",
+          "state": "completed",
+          "result": "GIT1-TEST-001",
+          "transportClosed": false,
+          "cancelRequested": false,
+          "workerStopped": true
+        }
+      ]
+    },
+    {
+      "name": "cancel-supported",
+      "at": "2026-11-25 12:06:57 +08",
+      "status": 200,
+      "firstEventState": "working",
+      "taskId": "task-a-6",
+      "cancel": {
+        "status": 200,
+        "error": null,
+        "elapsedMs": 52.7,
+        "headerNames": [
+          "connection",
+          "content-length",
+          "content-type",
+          "date",
+          "server"
+        ],
+        "hasResult": true,
+        "errorCode": null,
+        "errorMessage": null,
+        "taskId": "task-a-6",
+        "state": "canceled",
+        "resultText": [],
+        "resultKind": null,
+        "nested": true,
+        "bodyHasBackendPort": false
+      },
+      "final": [
+        {
+          "id": "task-a-6",
+          "state": "canceled",
+          "result": null,
+          "transportClosed": false,
+          "cancelRequested": true,
+          "workerStopped": true
+        }
+      ]
+    },
+    {
+      "name": "cancel-unsupported",
+      "at": "2026-11-25 12:07:02 +08",
+      "status": 200,
+      "firstEventState": "working",
+      "taskId": "task-b-2",
+      "cancel": {
+        "status": 200,
+        "error": null,
+        "elapsedMs": 2.7,
+        "headerNames": [
+          "connection",
+          "content-length",
+          "content-type",
+          "date",
+          "server"
+        ],
+        "hasResult": false,
+        "errorCode": -32601,
+        "errorMessage": "tasks/cancel is not supported",
+        "taskId": null,
+        "state": null,
+        "resultText": [],
+        "resultKind": null,
+        "nested": false,
+        "bodyHasBackendPort": false
+      },
+      "final": [
+        {
+          "id": "task-b-2",
+          "state": "completed",
+          "result": "GIT1-TEST-001",
+          "transportClosed": false,
+          "cancelRequested": false,
+          "workerStopped": true
+        }
+      ]
+    },
+    {
+      "name": "rl-descriptor-fail",
+      "at": "2026-11-25 12:07:02 +08",
+      "status": 200,
+      "text": "{\"ok\": true, \"company\": \"A\"}"
+    },
+    {
+      "name": "rl-service-down",
+      "at": "2026-11-25 12:07:02 +08",
+      "status": 500,
+      "text": "rate limit failed"
+    },
+    {
+      "name": "rl-cost-fail",
+      "at": "2026-11-25 12:07:02 +08",
+      "status": 200,
+      "text": "{\"ok\": true, \"company\": \"A\"}"
+    },
+    {
+      "name": "rl-local",
+      "at": "2026-11-25 12:07:02 +08",
+      "badKeyStatuses": [
+        200,
+        429
+      ],
+      "literalKeyStatuses": [
+        200,
+        429
+      ]
+    },
+    {
+      "name": "backend-unreachable",
+      "at": "2026-11-25 12:07:03 +08",
+      "status": 503,
+      "error": null,
+      "elapsedMs": 2.5,
+      "text": "connection refused"
+    },
+    {
+      "name": "backend-back",
+      "at": "2026-11-25 12:07:03 +08",
+      "status": 200,
+      "error": null,
+      "elapsedMs": 2.8,
+      "hasResult": true,
+      "errorCode": null,
+      "errorMessage": null,
+      "taskId": "task-a-1",
+      "state": "completed",
+      "resultText": [
+        "GIT1-TEST-001"
+      ],
+      "resultKind": null,
+      "nested": true,
+      "bodyHasBackendPort": false
+    },
+    {
+      "name": "kill-gateway-backend-continues",
+      "at": "2026-11-25 12:07:13 +08",
+      "stream": {
+        "status": 200,
+        "firstEventState": "working",
+        "taskId": "task-b-3"
+      },
+      "gatewayPoll": -9,
+      "dataPortOpen": false,
+      "backendPortOpen": true,
+      "midStates": [
+        {
+          "id": "task-b-1",
+          "state": "completed",
+          "result": "GIT1-TEST-001",
+          "transportClosed": false,
+          "cancelRequested": false,
+          "workerStopped": true
+        },
+        {
+          "id": "task-b-2",
+          "state": "completed",
+          "result": "GIT1-TEST-001",
+          "transportClosed": false,
+          "cancelRequested": false,
+          "workerStopped": true
+        },
+        {
+          "id": "task-b-3",
+          "state": "working",
+          "result": null,
+          "transportClosed": true,
+          "cancelRequested": false,
+          "workerStopped": false
+        }
+      ],
+      "endStates": [
+        {
+          "id": "task-b-1",
+          "state": "completed",
+          "result": "GIT1-TEST-001",
+          "transportClosed": false,
+          "cancelRequested": false,
+          "workerStopped": true
+        },
+        {
+          "id": "task-b-2",
+          "state": "completed",
+          "result": "GIT1-TEST-001",
+          "transportClosed": false,
+          "cancelRequested": false,
+          "workerStopped": true
+        },
+        {
+          "id": "task-b-3",
+          "state": "working",
+          "result": null,
+          "transportClosed": true,
+          "cancelRequested": false,
+          "workerStopped": false
+        }
+      ]
+    },
+    {
+      "name": "get-after-gateway-restart",
+      "at": "2026-11-25 12:07:13 +08",
+      "status": 200,
+      "error": null,
+      "elapsedMs": 3.0,
+      "hasResult": true,
+      "errorCode": null,
+      "errorMessage": null,
+      "taskId": "task-b-1",
+      "state": "completed",
+      "resultText": [
+        "GIT1-TEST-001"
+      ],
+      "resultKind": null,
+      "nested": true,
+      "bodyHasBackendPort": false
+    }
+  ],
+  "admin": {
+    "/": {
+      "status": 200,
+      "contentType": "text/html",
+      "bytes": 426,
+      "mentionsA2A": false,
+      "mentionsCancel": false,
+      "mentionsTask": false
+    },
+    "/ui": {
+      "status": 200,
+      "contentType": "text/html",
+      "bytes": 426,
+      "mentionsA2A": false,
+      "mentionsCancel": false,
+      "mentionsTask": false
+    },
+    "/config_dump": {
+      "status": 200,
+      "contentType": "application/json",
+      "bytes": 1500,
+      "mentionsA2A": true,
+      "mentionsCancel": false,
+      "mentionsTask": false
+    },
+    "/api/runtime": {
+      "status": 200,
+      "contentType": "application/json",
+      "bytes": 301,
+      "mentionsA2A": false,
+      "mentionsCancel": false,
+      "mentionsTask": false
+    },
+    "/api/logs/search": {
+      "status": 200,
+      "contentType": "application/json",
+      "bytes": 29,
+      "mentionsA2A": false,
+      "mentionsCancel": false,
+      "mentionsTask": false
+    },
+    "uiTitle": "agentgateway",
+    "listen": [
+      "/proc/net/tcp:127.0.0.1:18080",
+      "/proc/net/tcp:127.0.0.1:18081",
+      "/proc/net/tcp:127.0.0.1:18082",
+      "/proc/net/tcp:127.0.0.1:18083",
+      "/proc/net/tcp:127.0.0.1:18084",
+      "/proc/net/tcp:127.0.0.1:18085",
+      "/proc/net/tcp:127.0.0.1:15000"
+    ],
+    "nonLoopbackAdmin": {
+      "ip": "172.30.0.2",
+      "connected": false,
+      "error": "ConnectionRefusedError"
+    }
+  },
+  "mcpPatch": {
+    "initStatus": 200,
+    "sessionIssued": true,
+    "invalidRejectedBeforeBackend": true,
+    "validDeniedToolStatus": 400,
+    "validAllowedToolStatus": 200,
+    "backendHitsBefore": 1,
+    "backendHitsAfter": 2,
+    "backendMethods": {
+      "initialize": 1,
+      "tools/call": 1
+    }
+  },
+  "logs": {
+    "bytes": 31011,
+    "secretNamesFound": [],
+    "configDumpStatus": 200,
+    "configDumpSecretNamesFound": [],
+    "configDumpHasBackendPort": false,
+    "logHasBackendPort": true,
+    "sqliteSecret": false
+  },
+  "traces": {
+    "exports": 1,
+    "bytes": 16241,
+    "secretNamesFound": [],
+    "hasBackendPort": true,
+    "hasLoopback": true,
+    "hasPrivateKey": false
+  },
+  "backendCounts": {
+    "A": {
+      "http": 28,
+      "post": 13,
+      "content-type:application/json": 13,
+      "method:message/send": 4,
+      "tasksCreated": 6,
+      "executions": 6,
+      "method:tasks/get": 5,
+      "method:tasks/send": 1,
+      "authReject": 2,
+      "jsonRpcError": 1,
+      "method:message/stream": 2,
+      "method:tasks/cancel": 1,
+      "cancelRequests": 1,
+      "cancelApplied": 1
+    },
+    "Aversions": [
+      "1.0",
+      "0.3"
+    ],
+    "AclientAuthorizationPresent": 0,
+    "B": {
+      "http": 11,
+      "post": 5,
+      "content-type:application/json": 5,
+      "method:message/send": 1,
+      "tasksCreated": 3,
+      "executions": 3,
+      "method:message/stream": 2,
+      "method:tasks/cancel": 1,
+      "cancelRequests": 1,
+      "cancelUnsupported": 1,
+      "transportClosed": 1,
+      "method:tasks/get": 1
+    },
+    "Bversions": [
+      "1.0"
+    ],
+    "Btasks": [
+      {
+        "id": "task-b-1",
+        "contextId": "ctx-b-1",
+        "state": "completed",
+        "result": "GIT1-TEST-001",
+        "executions": 1,
+        "transportClosed": false,
+        "cancelRequested": false,
+        "workerStopped": true,
+        "method": "message/send"
+      },
+      {
+        "id": "task-b-2",
+        "contextId": "ctx-b-2",
+        "state": "completed",
+        "result": "GIT1-TEST-001",
+        "executions": 1,
+        "transportClosed": false,
+        "cancelRequested": false,
+        "workerStopped": true,
+        "method": "message/stream"
+      },
+      {
+        "id": "task-b-3",
+        "contextId": "ctx-b-3",
+        "state": "working",
+        "result": null,
+        "executions": 1,
+        "transportClosed": true,
+        "cancelRequested": false,
+        "workerStopped": false,
+        "method": "message/stream"
+      }
+    ],
+    "Atasks": [
+      {
+        "id": "task-a-1",
+        "contextId": "ctx-a-1",
+        "state": "completed",
+        "result": "GIT1-TEST-001",
+        "executions": 1,
+        "transportClosed": false,
+        "cancelRequested": false,
+        "workerStopped": true,
+        "method": "message/send"
+      },
+      {
+        "id": "task-a-2",
+        "contextId": "ctx-a-2",
+        "state": "completed",
+        "result": "GIT1-TEST-001",
+        "executions": 1,
+        "transportClosed": false,
+        "cancelRequested": false,
+        "workerStopped": true,
+        "method": "tasks/send"
+      },
+      {
+        "id": "task-a-3",
+        "contextId": "ctx-a-3",
+        "state": "completed",
+        "result": "GIT1-TEST-001",
+        "executions": 1,
+        "transportClosed": false,
+        "cancelRequested": false,
+        "workerStopped": true,
+        "method": "message/send"
+      },
+      {
+        "id": "task-a-4",
+        "contextId": "ctx-a-4",
+        "state": "completed",
+        "result": "GIT1-TEST-001",
+        "executions": 1,
+        "transportClosed": false,
+        "cancelRequested": false,
+        "workerStopped": true,
+        "method": "message/send"
+      },
+      {
+        "id": "task-a-5",
+        "contextId": "ctx-a-5",
+        "state": "completed",
+        "result": "GIT1-TEST-001",
+        "executions": 1,
+        "transportClosed": false,
+        "cancelRequested": false,
+        "workerStopped": true,
+        "method": "message/stream"
+      },
+      {
+        "id": "task-a-6",
+        "contextId": "ctx-a-6",
+        "state": "canceled",
+        "result": null,
+        "executions": 1,
+        "transportClosed": false,
+        "cancelRequested": true,
+        "workerStopped": true,
+        "method": "message/stream"
+      }
+    ]
+  }
+}
